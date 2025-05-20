@@ -1,6 +1,6 @@
 # Music Lyric Breakdown
 
-An AI-powered tool that analyzes and breaks down song lyrics using LangChain, LlamaIndex, and Gemini Pro.
+An AI-powered tool that analyzes and breaks down song lyrics using Groq, Pytube, Streamlit, Genius API, and YouTube API.
 
 ## Features
 
@@ -13,14 +13,16 @@ An AI-powered tool that analyzes and breaks down song lyrics using LangChain, Ll
 ## Prerequisites
 
 - Python 3.8+
-- Google Cloud API key for Gemini Pro
+- YouTube API
+- Genius API
+- Streamlit
 - Required Python packages (specified in requirements.txt)
 
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Music-Lyric-Breakdown.git
+git clone https://github.com/ArnabNath1/Music-Lyric-Breakdown.git
 cd Music-Lyric-Breakdown
 ```
 
@@ -33,22 +35,20 @@ pip install -r requirements.txt
 ```bash
 export GOOGLE_API_KEY=your_api_key_here
 ```
+Do the same for others
 
 ## Usage
 
 ```python
-python analyze_lyrics.py --song "song_title" --artist "artist_name"
+streamlit run app.py
 ```
 
 ## Project Structure
 
 ```
 Music-Lyric-Breakdown/
-├── src/
-│   ├── analyzer.py
-│   ├── utils.py
-│   └── models.py
-├── tests/
+├── app.py
+├── .env
 ├── requirements.txt
 └── README.md
 ```
@@ -65,6 +65,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
-- Google's Gemini Pro
-- LangChain
-- LlamaIndex
+- Groq
+- Streamlit
+- Genius API
+- YouTube API
