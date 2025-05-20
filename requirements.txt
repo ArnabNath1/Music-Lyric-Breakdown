@@ -1,0 +1,11 @@
+googletrans
+pytube
+streamlit
+youtube_dl
+lyricsgenius
+google-api-python-client
+wikipedia-api
+groq
+python-dotenv
+wikipedia
+isodate
